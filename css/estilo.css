@@ -61,6 +61,10 @@ body {
   justify-self: strech; /* start | end | center | stretch */
   align-self: strech; /* start | end | center | stretch */
 }
+
+.cabecera {
+  background-color: black;
+}
 /*  ------------------------------------------------NAV--------------------------*/
 .nav {
   grid-area: nav;
@@ -68,14 +72,16 @@ body {
   flex-flow: row-reverse nowrap;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgba(129, 129, 227, 0.938);
+  background-color: rgba(129, 129, 227, 0.938) !important;
 }
 
 .menuCabecera__link {
   text-decoration: none;
   color: white;
 }
-
+.nav2 {
+  background-color: rgba(129, 129, 227, 0.938) !important;
+}
 /*  ------------------------------------------------CARRUSEL--------------------------*/
 .carrusel {
   grid-area: carrusel;
