@@ -7,49 +7,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Software & Servicios</title>
   <link rel="shortcut icon" href="multimedia/sis3.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/estilo.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
 
 <body>
 
   <!-- Version con Animaciones -->
   <!-- contenedor del grid -->
-  <div id="contenedorPrincipal">
+  <div id="container-fluid">
 
     <!-- area logo  -->
-    <div class="logo">
-      <a href="../index.html">
-        <img class="logoCabecera__img" src="multimedia/sis.gif">
-      </a>
-    </div>
-    <!-- area header -->
+    <header class="row cabecera">
+      <div class="col-md-12 col-sm-6 col-xs-1">
+        <a class="logoCabecera" href="../index.html">
+          <img class="logoCabecera__img" src="../multimedia/sis.gif">
+        </a>
+      </div>
+    </header>
 
-
-    <div class="header"> item
-
-    </div>
 
     <!-- area nav  -->
-    <div class="nav">
-      <a class="menuCabecera__link" href="paginas/registrar.html">Registrarse</a>
-      <a class="menuCabecera__link" href="paginas/ingresar.html">Ingresar</a>
-      <a class="menuCabecera__link" href="paginas/quienesomos.html">Quienes Somos</a>
+    <nav class="row nav2">
+      <div class="col-md-12 col-sm-6 col-xs-1">
 
-    </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  nav2">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="registrar.html">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Ingresar.html">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="quienesomos.html">Quienes Somos</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </nav>
+
 
 
     <!-- area carrusel -->
-    <div class="carrusel">
-      <div class="carruselTotal">
-        <img class="imagen1" src="multimedia/carrusel1.jpg" alt="">
-        <img class="imagen2" src="multimedia/carrusel2.jpg" alt="">
-        <img class="imagen3" src="multimedia/carrusel3.jpg" alt="">
-      </div>
-    </div>>
+    <div class="row carrusel">
+      <div class="col-md-10 col-sm-6 col-xs-1">
 
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="multimedia/carrusel1.jpg" class="d-block w-100  imagen1" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="multimedia/carrusel2.jpg" class="d-block w-100 imagen2" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="multimedia/carrusel3.jpg" class="d-block w-100 imagen3" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- area buscador  -->
-    <section class="buscador">
+
+    <section class="col-md-10 col-sm-6 col-xs-1">
       <form action="" method="post">
         <label for="buscar">Buscar Producto</label>
         <input type="text" name="buscar" id="ingresoTexto">
@@ -58,58 +107,63 @@
     </section>
 
     <!-- area produtos  -->
+    <div class="card-group">
+      <div class="card">
+        <img src="multimedia/productos.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Productos</h5>
+          <ul>
+            <li>Monitores</li>
+            <li>Pantallas</li>
+            <li>Cpu</li>
+            <li>Notebook</li>
+            <li>Software</li>
+          </ul>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
 
 
-    <div class="cardProductos">
-      <h3>Productos</h3>
-      <img src="multimedia/productos.png" alt="">
-      <ul>
-        <li>Monitores</li>
-        <li>Pantallas</li>
-        <li>Cpu</li>
-        <li>Notebook</li>
-        <li>Software</li>
-      </ul>
-      <form action="" method="get">
-        <button>Comprar</button>
-      </form>
+
+      <!-- area Servicios  -->
+
+      <div class="card">
+        <img src="multimedia/servicios.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Servicios</h5>
+          <ul>
+            <li>Instalacion de Sistemas Operativos</li>
+            <li>Instalaciones ERP</li>
+            <li>Instalaciones CRM</li>
+            <li>Formateo de PC</li>
+            <li>Instalacion de Antivirus</li>
+          </ul>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
+      <!-- area promociones  -->
+
+      <div class="card">
+        <img src="multimedia/promociones.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Promociones</h5>
+          <ul>
+            <li>Asesoramiento Gratuito</li>
+            <li>Servicios Mensuales</li>
+            <li>Servicios Semanales</li>
+          </ul>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <!-- area produtos  -->
-
-
-    <div class="cardServicios">
-      <h3>Servicios</h3>
-      <img src="multimedia/servicios.png" alt="">
-      <ul>
-        <li>Instalacion de Sistemas Operativos</li>
-        <li>Instalaciones ERP</li>
-        <li>Instalaciones CRM</li>
-        <li>Formateo de PC</li>
-        <li>Instalacion de Antivirus</li>
-      </ul>
-      <form action="" method="get">
-        <button>Comprar</button>
-      </form>
-    </div>
-
-
-    <!-- area promociones  -->
-
-
-    <div class="cardPromociones">
-      <h3>Promociones</h3>
-      <img src="multimedia/promociones.png" alt="">
-      <ul>
-        <li>Asesoramiento Gratuito</li>
-        <li>Servicios Mensuales</li>
-        <li>Servicios Semanales</li>
-      </ul>
-      <form action="" method="get">
-        <button>Comprar</button>
-      </form>
-    </div>
 
     <!-- area   pie  -->
     <div class="pie">
