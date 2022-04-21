@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Software & Servicios</title>
   <link rel="shortcut icon" href="../multimedia/sis3.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -16,16 +17,30 @@
       <img class="logoCabecera__img" src="../multimedia/sis.gif">
     </a>
 
-
-
-    <nav class="menuCabecera">
-      <ul class="menuCabecera__list">
-        <li class="menuCabecera__item"><a class="menuCabecera__link" href="registrar.html">Registrarse</a></li>
-        <li class="menuCabecera__item"><a class="menuCabecera__link" href="ingresar.html">Ingresar</a></li>
-        <li class="menuCabecera__item"><a class="menuCabecera__link" href="quienesomos.html">Quienes Somos</a></li>
-
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light  nav2">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../paginas/registrar.html">Registrarse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../paginas/ingresar.html">Ingresar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../paginas/quienesomos.html">Quienes Somos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
+    </div>
+    </nav>
+
 
   </header>
 
@@ -66,11 +81,13 @@
   <footer class="pie">
     <div class="pie_menu">
       <ul class="menuPie__list">
-        <li class="menuPie__item"><a class="menuPie__link" href="termcond_polpriv.html">Terminos y Politicas</a></li>
-        <li class="menuPie__item"><a class="menuPie__link" href="contacto.html">Contacto</a></li>
+        <li class="menuPie__item"><a class="menuPie__link" href="../paginas/termcond_polpriv.html">Terminos y
+            Politicas</a></li>
+        <li class="menuPie__item"><a class="menuPie__link" href="../paginas/contacto.html">Contacto</a></li>
       </ul>
     </div>
   </footer>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
